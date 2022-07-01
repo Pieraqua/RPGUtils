@@ -9,11 +9,13 @@
 
 int main( int argc, char *argv[ ] )
 {
-    int diceNum = argv[0];
-    int diceSide = argv[1];
+    int diceNum = 0;
+    int diceSide = 0;
 
-    printf(rollDice(diceSide, diceNum));
-    fflush();
+    if(argc >= 2){
+        printf(rollDice(diceSide, diceNum));
+        fflush();
+    }
 
     return 0;
 }
