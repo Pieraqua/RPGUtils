@@ -14,7 +14,7 @@ int main( int argc, char *argv[ ] )
 
     if(argc >= 2){
         printf(rollDice(diceSide, diceNum));
-        fflush();
+        fflush(stdout);
     }
 
     return 0;

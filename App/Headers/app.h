@@ -7,3 +7,4 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include "diceroller.h"
