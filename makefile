@@ -13,7 +13,7 @@ CFLAGS = -Wall -g
 
 # define any directories containing header files other than /usr/include
 #
-INCLUDES = -I./include
+INCLUDES = -I./App/Headers	-I./Utils/Headers
 
 # define library paths in addition to /usr/lib
 #   if I wanted to include libraries not in /usr/lib I'd specify
@@ -26,7 +26,7 @@ LFLAGS =
 LIBS = -lm -lpthread 
 
 # define the C source files
-SRCS = sources/queue.c sources/aula_9/worstfit.c 
+SRCS = Utils/Sources/diceroller.c App/Sources/app.c 
 
 # define the C object files 
 #
@@ -39,7 +39,7 @@ SRCS = sources/queue.c sources/aula_9/worstfit.c
 OBJS = $(SRCS:.c=.o)
 
 # define the executable file 
-MAIN = ppos
+MAIN = RPGUtils
 
 #
 # The following part of the makefile is generic; it can be used to 
