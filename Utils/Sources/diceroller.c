@@ -22,11 +22,9 @@ int rollDice(int diceNum, int diceSide)
 {
     int result = 0, i = 0;
 
-    srand(time(NULL));
-
     for(i = 0; i < diceNum; i++)
     {
-        result += rand()%diceSide;
+        result += rand()%diceSide + 1;
     }
 
     return result;

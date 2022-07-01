@@ -9,5 +9,6 @@
  */
 
 #include <stdlib.h>
+#include <time.h>
 
 int rollDice(int diceNum, int diceSide);
